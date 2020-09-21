@@ -1,6 +1,6 @@
 <?php
 
-namespace Candresr\Productslist;
+namespace Candresr\Productlist;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

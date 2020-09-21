@@ -1,4 +1,4 @@
-@extends('candresr.productslist.app')
+@extends('products::app')
 @section('content')
 <hr>
     <h4>Product List</h4>

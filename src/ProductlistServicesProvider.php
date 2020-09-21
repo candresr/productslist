@@ -1,10 +1,10 @@
 <?php
 
-namespace Candresr\Productslist;
+namespace Candresr\Productlist;
 
 use Illuminate\Support\ServiceProvider;
 
-class ProductslistServicesProvider extends ServiceProvider
+class ProductlistServicesProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
@@ -17,7 +17,7 @@ class ProductslistServicesProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/migrations');
         $this->loadViewsFrom(__DIR__.'/views', 'products');
         $this->publishes([
-            __DIR__.'/views' => base_path('resources/views/candresr/productslist'),
+            __DIR__.'/views' => base_path('resources/views/candresr/productlist'),
         ]);
     }
 
@@ -29,7 +29,8 @@ class ProductslistServicesProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('candresr\productslist\ProductslistController');
+        include __DIR__.'/routes.php';
+        $this->app->make('Candresr\Productlist\ProductlistController');
     }
 
 }

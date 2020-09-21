@@ -1,5 +1,5 @@
 {
-    "name": "candresr/productslist",
+    "name": "candresr/productlist",
     "description": "Package for products list",
     "license": "MIT",
     "authors": [
@@ -10,18 +10,18 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "laravelcollective/html": "^5.5"
+        "laravelcollective/html": "6.2"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "candresr\\productslist\\ProductslistServiceProvider"
+                "Candresr\\Productlist\\ProductlistServicesProvider"
             ]
         }
     },
     "autoload": {
         "psr-4": {
-            "Candresr\\Productslist\\": "/src"
+            "Candresr\\Productlist\\": "/src"
         }
     }
 }

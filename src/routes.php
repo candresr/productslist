@@ -1,2 +1,8 @@
 <?php
-Route::resource('/products', 'Candres\Productslist\ProductslistController');
+
+
+Route::get('/test', function(){
+    echo "Product Package";
+});
+
+Route::resource('/products', 'Candresr\Productlist\ProductlistController');
