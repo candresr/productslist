@@ -1,4 +1,4 @@
-# Laravel Visitor Tracker and Statistics
+# Laravel Product List
 
 
 Application for authentication and obtaining the products, through a rest api.
@@ -18,7 +18,9 @@ php artisan migrate
 
 3) Show applicaction:
 
-<IP><project>/public/pagination
+```bash
+<http://IP/project/public/pagination>
+```
 
 ## License
 
