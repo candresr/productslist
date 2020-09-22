@@ -46,7 +46,7 @@
                         <tr>
                         <th scope="row">{{$product->id}}</th>
                         <td>{{$product->name}}/td>
-                        <td>{{$product->price}}</td>
+                        <td>${{number_format($product->price,0)}}</td>
                         <td>{{$product->file}}</td>
                         </tr>
                     @endforeach
