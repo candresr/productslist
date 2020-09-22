@@ -10,7 +10,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "laravelcollective/html": "6.2"
+        "laravelcollective/html": "6.2",
+        "guzzlehttp/guzzle": "^7.1@dev"
     },
     "extra": {
         "laravel": {
@@ -20,6 +21,9 @@
         }
     },
     "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
         "psr-4": {
             "Candresr\\Productlist\\": "/src"
         }

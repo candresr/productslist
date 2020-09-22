@@ -29,8 +29,8 @@ class ProductlistServicesProvider extends ServiceProvider
      */
     public function register()
     {
-        include __DIR__.'/routes.php';
         $this->app->make('Candresr\Productlist\ProductlistController');
+        $this->app->make('Candresr\Productlist\ConexionController');
     }
 
 }
